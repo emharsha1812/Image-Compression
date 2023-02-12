@@ -4,7 +4,7 @@ from scipy.signal import convolve2d
 
 class Downsampling():
     def __init__(self, ratio='4:2:0'):
-        assert ratio in ('4:4:4', '4:2:2', '4:2:0'), "Please choose one of the following {'4:4:4', '4:2:2', '4:2:0'}"
+        
         self.ratio = ratio
         
     def __call__(self, x):
